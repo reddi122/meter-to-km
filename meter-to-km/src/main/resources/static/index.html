@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meters → Kilometers Converter</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h1 class="title">Meters → Kilometers</h1>
+
+      <label class="label" for="metersInput">Enter distance (meters)</label>
+      <div class="input-row">
+        <input id="metersInput" type="number" placeholder="e.g. 1500" min="0" step="any" />
+        <button id="convertBtn">Convert</button>
+      </div>
+
+      <div id="result" class="result hidden">
+        <div class="result-card">
+          <div><strong>Meters:</strong> <span id="outMeters">—</span></div>
+          <div><strong>Kilometers:</strong> <span id="outKm">—</span></div>
+        </div>
+      </div>
+
+      <p class="note">This app calls the backend API <code>/api/convert?meters=</code>.</p>
+    </div>
+
+    <footer class="footer">
+      <small>Built with Spring Boot + Vanilla JS</small>
+    </footer>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
